@@ -1,0 +1,64 @@
+<RootWidget>:
+    TabbedPanel:
+        do_default_tab: False
+        
+        TabbedPanelItem:
+            text: 'Crawl'
+          	  
+            GridLayout:
+                cols: 1
+                rows: 2
+
+                ProgressBar:
+                    padding: 1
+                    spacing: 1
+                GridLayout:
+                    cols: 1
+                    rows: 2
+                    FileChooserListView:
+                    GridLayout:
+                        cols: 3
+                        rows: 1
+
+                        Button:
+                            text: 'Ok'
+                            pos_hint: {'x': 0, 'center_y': .5}
+                            size_hint: (None, None)
+                        Button:
+                            text: 'Cancel'
+                            pos_hint: {'right': 1, 'center_y': .5}
+                            size_hint: (None, None)
+
+
+
+        TabbedPanelItem:
+            text: 'Chunk'
+            BoxLayout:
+                BoxLayout:
+                    TextInput:
+                        text: "Line Input"
+                        multiline: True
+
+
+        TabbedPanelItem:
+            text: 'nGram'
+            BoxLayout:
+                TextInput:
+                    text: "nGram Text"
+                    multiline: True
+
+        TabbedPanelItem:
+            text: 'Log'
+            BoxLayout:
+                TextInput:
+                    text: "Log Text"
+                    multiline: True
+
+        TabbedPanelItem:
+            text: 'Graph'
+            BoxLayout:
+                TextInput:
+                    text: "Graph Text"
+                    multiline: True
+
+
