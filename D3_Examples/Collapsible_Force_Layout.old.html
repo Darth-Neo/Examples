@@ -1,34 +1,42 @@
-
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
     <link type="text/css" rel="stylesheet" href="style.css"/>
     <style type="text/css">
 
-circle.node {
-  cursor: pointer;
-  stroke: #000;
-  stroke-width: .5px;
-}
+        circle.node
+        {
+            cursor: pointer;
+            stroke: #000;
+            stroke-width: .5px;
+            font: 10px sans-serif;
+        }
 
-line.link {
-  fill: none;
-  stroke: #9ecae1;
-  stroke-width: 1.5px;
-}
+        line.link
+        {
+            fill: none;
+            stroke: #9ecae1;
+            stroke-width: 1.5px;
+        }
+
+        .text
+        {
+            font: 4px sans-serif;
+            font-size: 4px;
+        }
 
     </style>
-  </head>
-  <body>
-    <h2>
-      Flare code size<br>
-      force-directed graph
-    </h2>
-    <script type="text/javascript" src="d3/d3.js"></script>
-    <script type="text/javascript" src="d3/d3.geom.js"></script>
-    <script type="text/javascript" src="d3/d3.layout.js"></script>
-    <script type="text/javascript">
+</head>
+<body>
+<h2>
+    Flare code size<br>
+    force-directed graph
+</h2>
+<script type="text/javascript" src="d3/d3.js"></script>
+<script type="text/javascript" src="d3/d3.geom.js"></script>
+<script type="text/javascript" src="d3/d3.layout.js"></script>
+<script type="text/javascript">
 
 var w = 1280,
     h = 800,
@@ -46,17 +54,57 @@ var vis = d3.select("body").append("svg:svg")
     .attr("width", w)
     .attr("height", h);
 
-d3.json("flare.json", function(json) {
-  root = json;
-  root.fixed = true;
-  root.x = w / 2;
-  root.y = h / 2 - 80;
-  update();
-});
+d3.json("flare.json",
+    function(json)
+    {
+      root = json;
+      console.log(root);
+      root.fixed = true;
+      root.x = w / 2;
+      root.y = h / 2 - 80;
+      update();
+    }
+);
 
-function update() {
-  var nodes = flatten(root),
-      links = d3.layout.tree().links(nodes);
+function log(m)
+{
+  console.log("logger : m");
+
+  lm = m.length;
+
+  try
+  {
+      for(i=0; i < lm; ++i)
+      {
+          console.log(i, m[i].name);
+      };
+  }
+  catch(err)
+  {
+    console.log(err);
+  }
+
+};
+
+function update()
+{
+  console.log("Update Called");
+
+  var nodes = flatten(root);
+  var links = d3.layout.tree().links(nodes);
+  var txts = [];
+  var nl = 0;
+
+  nl = nodes.length;
+
+  for(i=1; i < nl; ++i)
+  {
+      txts.push(nodes[i].name);
+  };
+
+  log(nodes);
+
+  // log(links);
 
   // Restart the force layout.
   force
@@ -81,11 +129,26 @@ function update() {
 
   // Update the nodes…
   node = vis.selectAll("circle.node")
-      .data(nodes, function(d) { return d.id; })
+      .data(nodes, function(d) { console.log(d); return d.id; })
+      .style("fill", color);
+
+  txt = vis.selectAll("text.node")
+      .data(nodes, function(d) { console.log(d); return d.name; })
       .style("fill", color);
 
   node.transition()
       .attr("r", function(d) { return d.children ? 4.5 : Math.sqrt(d.size) / 10; });
+
+  txt.transition()
+      .attr("r", function(d) { return d.children ? 4.5 : Math.sqrt(d.size) / 10; });
+
+  // Enter any new nodes.
+  txt.enter().append("svg:text")
+      .attr("class", "text.node")
+      .attr("font-size", "6px")
+      .attr("x", function(d) { return d.x; })
+      .attr("y", function(d) { return d.y; })
+      .text(function(d) { return d.name; })
 
   // Enter any new nodes.
   node.enter().append("svg:circle")
@@ -101,27 +164,35 @@ function update() {
   node.exit().remove();
 }
 
-function tick() {
+function tick()
+{
   link.attr("x1", function(d) { return d.source.x; })
       .attr("y1", function(d) { return d.source.y; })
       .attr("x2", function(d) { return d.target.x; })
       .attr("y2", function(d) { return d.target.y; });
 
   node.attr("cx", function(d) { return d.x; })
-      .attr("cy", function(d) { return d.y; });
+      .attr("cy", function(d) { return d.y; })
+      .data(function(d) { return d.id; })
+      .text(function(d) { return d.name; });
 }
 
 // Color leaf nodes orange, and packages white or blue.
-function color(d) {
+function color(d)
+{
   return d._children ? "#3182bd" : d.children ? "#c6dbef" : "#fd8d3c";
 }
 
 // Toggle children on click.
-function click(d) {
-  if (d.children) {
+function click(d)
+{
+  if (d.children)
+  {
     d._children = d.children;
     d.children = null;
-  } else {
+  }
+  else
+  {
     d.children = d._children;
     d._children = null;
   }
@@ -129,10 +200,12 @@ function click(d) {
 }
 
 // Returns a list of all nodes under the root.
-function flatten(root) {
+function flatten(root)
+{
   var nodes = [], i = 0;
 
-  function recurse(node) {
+  function recurse(node)
+  {
     if (node.children) node.size = node.children.reduce(function(p, v) { return p + recurse(v); }, 0);
     if (!node.id) node.id = ++i;
     nodes.push(node);
@@ -143,6 +216,6 @@ function flatten(root) {
   return nodes;
 }
 
-    </script>
-  </body>
+</script>
+</body>
 </html>
