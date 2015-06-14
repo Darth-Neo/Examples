@@ -1,3 +1,2 @@
-# Example_Code
+# Example
 Collection of useful examples from various platforms
-# Examples
