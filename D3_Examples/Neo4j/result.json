@@ -1,0 +1,308 @@
+{
+  "name": "ArchimateModel",
+  "children" : [
+    {
+      "row": [
+        {
+          "aid": "703c115d",
+          "tag": "element",
+          "typeName": "DataObject",
+          "aname": "Prospect",
+          "parentPath": "/Testing/Application/Data"
+        },
+        {
+          "aid": "ed632c4e",
+          "tag": "element",
+          "typeName": "ApplicationComponent",
+          "aname": "Credit Check",
+          "parentPath": "/Testing/Application/Applications"
+        }
+      ],
+      "graph": {
+        "nodes": [
+          {
+            "id": "20",
+            "labels": [
+              "ApplicationComponent"
+            ],
+            "properties": {
+              "aid": "ed632c4e",
+              "tag": "element",
+              "typeName": "ApplicationComponent",
+              "aname": "Credit Check",
+              "parentPath": "/Testing/Application/Applications"
+            }
+          },
+          {
+            "id": "25",
+            "labels": [
+              "DataObject"
+            ],
+            "properties": {
+              "aid": "703c115d",
+              "tag": "element",
+              "typeName": "DataObject",
+              "aname": "Prospect",
+              "parentPath": "/Testing/Application/Data"
+            }
+          }
+        ],
+        "relationships": [
+          {
+            "id": "32",
+            "type": "AccessRelationship",
+            "startNode": "20",
+            "endNode": "25",
+            "properties": {}
+          }
+        ]
+      }
+    },
+    {
+      "row": [
+        {
+          "aid": "060a4f92",
+          "tag": "element",
+          "typeName": "DataObject",
+          "aname": "Do-Not Market List",
+          "parentPath": "/Testing/Application/Data"
+        },
+        {},
+        {
+          "aid": "b0ffbd1c",
+          "tag": "element",
+          "typeName": "ApplicationComponent",
+          "aname": "Market No-List",
+          "parentPath": "/Testing/Application/Applications"
+        }
+      ],
+      "graph": {
+        "nodes": [
+          {
+            "id": "21",
+            "labels": [
+              "ApplicationComponent"
+            ],
+            "properties": {
+              "aid": "b0ffbd1c",
+              "tag": "element",
+              "typeName": "ApplicationComponent",
+              "aname": "Market No-List",
+              "parentPath": "/Testing/Application/Applications"
+            }
+          },
+          {
+            "id": "23",
+            "labels": [
+              "DataObject"
+            ],
+            "properties": {
+              "aid": "060a4f92",
+              "tag": "element",
+              "typeName": "DataObject",
+              "aname": "Do-Not Market List",
+              "parentPath": "/Testing/Application/Data"
+            }
+          }
+        ],
+        "relationships": [
+          {
+            "id": "29",
+            "type": "AccessRelationship",
+            "startNode": "21",
+            "endNode": "23",
+            "properties": {}
+          }
+        ]
+      }
+    },
+    {
+      "row": [
+        {
+          "aid": "408e9ae1",
+          "tag": "element",
+          "typeName": "DataObject",
+          "aname": "Tour",
+          "parentPath": "/Testing/Application/Data"
+        },
+        {},
+        {
+          "aid": "6aa0e0ed",
+          "tag": "element",
+          "typeName": "ApplicationComponent",
+          "aname": "SalesForce.com ",
+          "parentPath": "/Testing/Application/Applications"
+        }
+      ],
+      "graph": {
+        "nodes": [
+          {
+            "id": "22",
+            "labels": [
+              "ApplicationComponent"
+            ],
+            "properties": {
+              "aid": "6aa0e0ed",
+              "tag": "element",
+              "typeName": "ApplicationComponent",
+              "aname": "SalesForce.com ",
+              "parentPath": "/Testing/Application/Applications"
+            }
+          },
+          {
+            "id": "26",
+            "labels": [
+              "DataObject"
+            ],
+            "properties": {
+              "aid": "408e9ae1",
+              "tag": "element",
+              "typeName": "DataObject",
+              "aname": "Tour",
+              "parentPath": "/Testing/Application/Data"
+            }
+          }
+        ],
+        "relationships": [
+          {
+            "id": "33",
+            "type": "AccessRelationship",
+            "startNode": "22",
+            "endNode": "26",
+            "properties": {}
+          }
+        ]
+      }
+    },
+    {
+      "row": [
+        {
+          "aid": "722f4f47",
+          "tag": "element",
+          "typeName": "DataObject",
+          "aname": "Lead",
+          "parentPath": "/Testing/Application/Data"
+        },
+        {},
+        {
+          "aid": "6aa0e0ed",
+          "tag": "element",
+          "typeName": "ApplicationComponent",
+          "aname": "SalesForce.com ",
+          "parentPath": "/Testing/Application/Applications"
+        }
+      ],
+      "graph": {
+        "nodes": [
+          {
+            "id": "22",
+            "labels": [
+              "ApplicationComponent"
+            ],
+            "properties": {
+              "aid": "6aa0e0ed",
+              "tag": "element",
+              "typeName": "ApplicationComponent",
+              "aname": "SalesForce.com ",
+              "parentPath": "/Testing/Application/Applications"
+            }
+          },
+          {
+            "id": "24",
+            "labels": [
+              "DataObject"
+            ],
+            "properties": {
+              "aid": "722f4f47",
+              "tag": "element",
+              "typeName": "DataObject",
+              "aname": "Lead",
+              "parentPath": "/Testing/Application/Data"
+            }
+          }
+        ],
+        "relationships": [
+          {
+            "id": "31",
+            "type": "AccessRelationship",
+            "startNode": "22",
+            "endNode": "24",
+            "properties": {}
+          }
+        ]
+      }
+    },
+    {
+      "row": [
+        {
+          "aid": "105a8bab",
+          "tag": "element",
+          "typeName": "DataObject",
+          "aname": "Tour Schedule",
+          "parentPath": "/Testing/Application/Data"
+        },
+        {},
+        {
+          "aid": "6aa0e0ed",
+          "tag": "element",
+          "typeName": "ApplicationComponent",
+          "aname": "SalesForce.com ",
+          "parentPath": "/Testing/Application/Applications"
+        }
+      ],
+      "graph": {
+        "nodes": [
+          {
+            "id": "22",
+            "labels": [
+              "ApplicationComponent"
+            ],
+            "properties": {
+              "aid": "6aa0e0ed",
+              "tag": "element",
+              "typeName": "ApplicationComponent",
+              "aname": "SalesForce.com ",
+              "parentPath": "/Testing/Application/Applications"
+            }
+          },
+          {
+            "id": "27",
+            "labels": [
+              "DataObject"
+            ],
+            "properties": {
+              "aid": "105a8bab",
+              "tag": "element",
+              "typeName": "DataObject",
+              "aname": "Tour Schedule",
+              "parentPath": "/Testing/Application/Data"
+            }
+          }
+        ],
+        "relationships": [
+          {
+            "id": "30",
+            "type": "AccessRelationship",
+            "startNode": "22",
+            "endNode": "27",
+            "properties": {}
+          }
+        ]
+      }
+    }
+  ],
+  "stats": {
+    "contains_updates": false,
+    "nodes_created": 0,
+    "nodes_deleted": 0,
+    "properties_set": 0,
+    "relationships_created": 0,
+    "relationship_deleted": 0,
+    "labels_added": 0,
+    "labels_removed": 0,
+    "indexes_added": 0,
+    "indexes_removed": 0,
+    "constraints_added": 0,
+    "constraints_removed": 0
+  }
+}

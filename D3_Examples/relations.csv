@@ -1,0 +1,177 @@
+id,type,name,documentation,source,target
+976,AccessRelationship,,,891,946
+882,AccessRelationship,,,867,839
+884,AccessRelationship,,,861,838
+880,AccessRelationship,,,855,837
+974,AccessRelationship,,,909,837
+972,AccessRelationship,,,903,838
+693,AccessRelationship,create/ update,,564,674
+697,AccessRelationship,create/ update,,564,673
+708,AccessRelationship,crud,,580,673
+706,AccessRelationship,read,,572,675
+704,AccessRelationship,read,,572,673
+695,AccessRelationship,read,,572,674
+90702769,AccessRelationship,update,,588,674
+756,AggregationRelationship,,,733,521
+760,AggregationRelationship,,,733,507
+758,AggregationRelationship,,,733,514
+762,AggregationRelationship,,,740,507
+764,AggregationRelationship,,,740,514
+768,AggregationRelationship,,,740,521
+81b9d07c,AggregationRelationship,,,1546,352
+2891eb9f,AggregationRelationship,,,1546,528
+806,AggregationRelationship,,,791,674
+816,AggregationRelationship,,,675,792
+814,AggregationRelationship,,,675,673
+1386,AssignmentRelationship,,,275,514
+774,AssignmentRelationship,,,514,612
+772,AssignmentRelationship,,,733,721
+1388,AssignmentRelationship,,,514,556
+1381,AssignmentRelationship,,,1337,1368
+4a214d41,AssignmentRelationship,,,740,722
+464,AssociationRelationship,,,416,310
+466,AssociationRelationship,,,416,317
+468,AssociationRelationship,,,416,352
+458,AssociationRelationship,,,409,282
+445,AssociationRelationship,,,402,345
+447,AssociationRelationship,,,402,409
+460,AssociationRelationship,,,409,289
+470,AssociationRelationship,,,423,331
+449,AssociationRelationship,,,402,423
+443,AssociationRelationship,,,402,338
+462,AssociationRelationship,,,416,303
+437,AssociationRelationship,,,402,416
+1259,AssociationRelationship,,,521,1250
+a2243077,AssociationRelationship,,,282,1536
+659978dc,AssociationRelationship,,,1538,282
+be2dbdfd,AssociationRelationship,,,1544,352
+58ee7df2,AssociationRelationship,,,1540,289
+4a4cdf33,AssociationRelationship,,,1542,289
+1274,AssociationRelationship,,,1250,1208
+670aa5ed,AssociationRelationship,,,986,1089
+197b66d6,AssociationRelationship,,,1089,998
+e479d313,AssociationRelationship,,,998,1095
+2dd4031d,AssociationRelationship,,,1095,1004
+3fb2a575,AssociationRelationship,,,1004,1101
+7e50c753,AssociationRelationship,,,1101,1071
+80c919e4,AssociationRelationship,,,1089,1065
+ec3fef51,AssociationRelationship,,,992,1089
+dd9c00de,AssociationRelationship,,,1101,1882
+812,CompositionRelationship,,,674,673
+810,CompositionRelationship,,,674,675
+808,CompositionRelationship,,,674,792
+1831,CompositionRelationship,,,843,855
+1833,CompositionRelationship,,,843,861
+1778,FlowRelationship,,,528,501
+1648,FlowRelationship,,,345,324
+1650,FlowRelationship,,,324,345
+1652,FlowRelationship,,,324,338
+1644,FlowRelationship,,,338,324
+1768,FlowRelationship,,,489,501
+1766,FlowRelationship,,,489,477
+1786,FlowRelationship,,,495,501
+1764,FlowRelationship,,,477,489
+1770,FlowRelationship,,,501,489
+1776,FlowRelationship,,,501,528
+1762,FlowRelationship,asset info,,495,483
+1618,FlowRelationship,Claim form (electronic),,352,282
+1616,FlowRelationship,claim form (paper),,282,352
+1784,FlowRelationship,claim info,,489,521
+1772,FlowRelationship,claims,,521,477
+1638,FlowRelationship,confirm,,331,324
+1636,FlowRelationship,confirmation,,528,331
+1758,FlowRelationship,contract info,,483,471
+1760,FlowRelationship,contract info.,,483,495
+1780,FlowRelationship,cust. info,,507,471
+1752,FlowRelationship,Customer Information,,521,507
+1756,FlowRelationship,customer information,,471,483
+1630,FlowRelationship,electronic contracts,,352,324
+1622,FlowRelationship,Electronic Contracts,,352,289
+1774,FlowRelationship,insurance info,,477,521
+1620,FlowRelationship,Intermediary Contracts,,289,352
+1788,FlowRelationship,money,,501,495
+1628,FlowRelationship,paper contracts,,324,352
+1634,FlowRelationship,payment,,331,528
+1632,FlowRelationship,payment order,,324,331
+1782,FlowRelationship,product info.,,471,507
+1750,FlowRelationship,Product Information,,507,521
+1329,RealisationRelationship,,,1311,1208
+1323,RealisationRelationship,,,556,1202
+1327,RealisationRelationship,,,1302,1214
+1321,RealisationRelationship,,,596,1196
+1325,RealisationRelationship,,,556,1226
+1434,RealisationRelationship,,,588,1226
+1430,RealisationRelationship,,,564,1202
+1432,RealisationRelationship,,,572,1214
+718,RealisationRelationship,,,676,673
+955,RealisationRelationship,,,837,674
+957,RealisationRelationship,,,839,673
+965,RealisationRelationship,,,838,794
+953,RealisationRelationship,,,946,792
+967,RealisationRelationship,,,838,793
+961,RealisationRelationship,,,838,795
+959,RealisationRelationship,,,838,796
+963,RealisationRelationship,,,838,803
+1452,RealisationRelationship,,,861,1220
+1450,RealisationRelationship,,,1393,1196
+1454,RealisationRelationship,,,1399,1208
+1424,RealisationRelationship,,,861,1414
+1422,RealisationRelationship,,,1393,1407
+943,RealisationRelationship,,,843,935
+1127,RealisationRelationship,,,1065,1110
+1125,RealisationRelationship,,,998,1116
+1136,RealisationRelationship,,,986,1128
+1482,RealisationRelationship,,,986,1455
+1480,RealisationRelationship,,,1065,1462
+1892,RealisationRelationship,,,1882,1813
+1879,RealisationRelationship,,,1870,1399
+826,SpecialisationRelationship,,,796,675
+818,SpecialisationRelationship,,,793,675
+824,SpecialisationRelationship,,,795,675
+822,SpecialisationRelationship,,,803,675
+820,SpecialisationRelationship,,,794,675
+655,TriggeringRelationship,,,651,564
+1335,TriggeringRelationship,,,1302,1311
+657,TriggeringRelationship,,,564,572
+1333,TriggeringRelationship,,,556,1302
+728,TriggeringRelationship,,,721,612
+659,TriggeringRelationship,,,572,580
+661,TriggeringRelationship,,,580,588
+732,TriggeringRelationship,,,650,721
+2d89d4e7,TriggeringRelationship,,,612,722
+95f13189,TriggeringRelationship,,,521,650
+930,TriggeringRelationship,,,891,897
+932,TriggeringRelationship,,,897,903
+934,TriggeringRelationship,,,903,909
+09da63b3,UsedByRelationship,,,1540,507
+8d85d21d,UsedByRelationship,,,1542,507
+1295,UsedByRelationship,,,1226,521
+1293,UsedByRelationship,,,1202,521
+1297,UsedByRelationship,,,1214,521
+1282,UsedByRelationship,,,1196,521
+1299,UsedByRelationship,,,1208,521
+1438,UsedByRelationship,,,1202,1368
+1444,UsedByRelationship,,,1196,564
+1446,UsedByRelationship,,,1220,564
+1448,UsedByRelationship,,,1208,588
+1442,UsedByRelationship,,,1226,1368
+1440,UsedByRelationship,,,1214,1368
+b74a5ecd,UsedByRelationship,,,1407,612
+1731,UsedByRelationship,,,935,722
+1733,UsedByRelationship,,,1414,721
+1428,UsedByRelationship,,,1414,1399
+1426,UsedByRelationship,,,1407,861
+1821,UsedByRelationship,,,1793,1800
+1823,UsedByRelationship,,,1393,1800
+1825,UsedByRelationship,,,849,1800
+1829,UsedByRelationship,,,1399,843
+1827,UsedByRelationship,,,855,849
+1835,UsedByRelationship,,,855,1793
+853128f7,UsedByRelationship,,,1813,1399
+40e2692a,UsedByRelationship,,,1455,1393
+63eeca37,UsedByRelationship,,,1455,861
+bc36ad29,UsedByRelationship,,,1462,861
+776f61b0,UsedByRelationship,,,1462,1399
+f19393d1,UsedByRelationship,call,,1536,521
+7f9b43e9,UsedByRelationship,write,,1538,521
+16871b47,UsedByRelationship,write,,1544,521
